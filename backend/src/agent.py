@@ -12,11 +12,14 @@ from livekit.agents import (
     cli,
     metrics,
     tokenize,
-    # function_tool,
-    # RunContext
+    llm,
+    function_tool,
+    RunContext,
 )
 from livekit.plugins import murf, silero, google, deepgram, noise_cancellation
 from livekit.plugins.turn_detector.multilingual import MultilingualModel
+import json
+from typing import List
 
 logger = logging.getLogger("agent")
 
@@ -26,11 +29,53 @@ load_dotenv(".env.local")
 class Assistant(Agent):
     def __init__(self) -> None:
         super().__init__(
-            instructions="""You are a helpful voice AI assistant. The user is interacting with you via voice, even if you perceive the conversation as text.
-            You eagerly assist users with their questions by providing information from your extensive knowledge.
-            Your responses are concise, to the point, and without any complex formatting or punctuation including emojis, asterisks, or other symbols.
-            You are curious, friendly, and have a sense of humor.""",
+            instructions="""You are a friendly barista at "Code & Coffee", a cozy coffee shop.
+            Your goal is to take the customer's order.
+            You must collect the following information for an order:
+            - Drink Type (e.g., Latte, Cappuccino, Americano)
+            - Size (Small, Medium, Large)
+            - Milk (Whole, Skim, Oat, Almond, Soy, None)
+            - Extras (e.g., Vanilla Syrup, Extra Shot, Sugar, None)
+            - Customer Name
+
+            Ask clarifying questions to fill in any missing information.
+            Be polite, concise, and helpful.
+            Once you have all the information, use the `submit_order` tool to save the order.
+            Confirm the order details with the customer before submitting.""",
         )
+
+    @function_tool
+    async def submit_order(
+        self,
+        context: RunContext,
+        drink_type: str,
+        size: str,
+        milk: str,
+        extras: List[str],
+        name: str,
+    ):
+        """Submit the customer's order after collecting all details.
+
+        Args:
+            drink_type: The type of drink ordered (e.g., Latte, Cappuccino).
+            size: The size of the drink (Small, Medium, Large).
+            milk: The type of milk (Whole, Skim, Oat, Almond, Soy, None).
+            extras: List of extras (e.g., Vanilla Syrup, Extra Shot, Sugar, None).
+            name: The customer's name.
+        """
+        order = {
+            "drinkType": drink_type,
+            "size": size,
+            "milk": milk,
+            "extras": extras,
+            "name": name,
+        }
+        logger.info(f"Submitting order: {order}")
+        
+        with open("order.json", "w") as f:
+            json.dump(order, f, indent=2)
+        
+        return "Order submitted successfully! Thank you for your order."
 
     # To add tools, use the @function_tool decorator.
     # Here's an example that adds a simple weather tool.
