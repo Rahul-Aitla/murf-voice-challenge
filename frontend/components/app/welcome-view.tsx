@@ -1,20 +1,66 @@
-import { Button } from '@/components/livekit/button';
+'use client';
 
-function WelcomeImage() {
+import { Button } from '@/components/livekit/button';
+import { motion } from 'motion/react';
+
+// Clean wellness icon without glow effects
+function WellnessIcon() {
   return (
-    <svg
-      width="64"
-      height="64"
-      viewBox="0 0 64 64"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="text-fg0 mb-4 size-16"
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className="relative mb-8"
     >
-      <path
-        d="M15 24V40C15 40.7957 14.6839 41.5587 14.1213 42.1213C13.5587 42.6839 12.7956 43 12 43C11.2044 43 10.4413 42.6839 9.87868 42.1213C9.31607 41.5587 9 40.7957 9 40V24C9 23.2044 9.31607 22.4413 9.87868 21.8787C10.4413 21.3161 11.2044 21 12 21C12.7956 21 13.5587 21.3161 14.1213 21.8787C14.6839 22.4413 15 23.2044 15 24ZM22 5C21.2044 5 20.4413 5.31607 19.8787 5.87868C19.3161 6.44129 19 7.20435 19 8V56C19 56.7957 19.3161 57.5587 19.8787 58.1213C20.4413 58.6839 21.2044 59 22 59C22.7956 59 23.5587 58.6839 24.1213 58.1213C24.6839 57.5587 25 56.7957 25 56V8C25 7.20435 24.6839 6.44129 24.1213 5.87868C23.5587 5.31607 22.7956 5 22 5ZM32 13C31.2044 13 30.4413 13.3161 29.8787 13.8787C29.3161 14.4413 29 15.2044 29 16V48C29 48.7957 29.3161 49.5587 29.8787 50.1213C30.4413 50.6839 31.2044 51 32 51C32.7956 51 33.5587 50.6839 34.1213 50.1213C34.6839 49.5587 35 48.7957 35 48V16C35 15.2044 34.6839 14.4413 34.1213 13.8787C33.5587 13.3161 32.7956 13 32 13ZM42 21C41.2043 21 40.4413 21.3161 39.8787 21.8787C39.3161 22.4413 39 23.2044 39 24V40C39 40.7957 39.3161 41.5587 39.8787 42.1213C40.4413 42.6839 41.2043 43 42 43C42.7957 43 43.5587 42.6839 44.1213 42.1213C44.6839 41.5587 45 40.7957 45 40V24C45 23.2044 44.6839 22.4413 44.1213 21.8787C43.5587 21.3161 42.7957 21 42 21ZM52 17C51.2043 17 50.4413 17.3161 49.8787 17.8787C49.3161 18.4413 49 19.2044 49 20V44C49 44.7957 49.3161 45.5587 49.8787 46.1213C50.4413 46.6839 51.2043 47 52 47C52.7957 47 53.5587 46.6839 54.1213 46.1213C54.6839 45.5587 55 44.7957 55 44V20C55 19.2044 54.6839 18.4413 54.1213 17.8787C53.5587 17.3161 52.7957 17 52 17Z"
-        fill="currentColor"
-      />
-    </svg>
+      <svg
+        width="120"
+        height="120"
+        viewBox="0 0 120 120"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="mx-auto"
+      >
+        {/* Meditation Person */}
+        <g className="animate-pulse-slow">
+          {/* Head */}
+          <circle cx="60" cy="30" r="12" fill="url(#gradientPrimary)" />
+
+          {/* Body */}
+          <path
+            d="M60 46 
+               C60 46, 45 52, 40 62
+               L40 82
+               C40 84.5, 42 86.5, 44.5 86.5
+               L52 86.5
+               L52 105
+               C52 107.5, 54 109.5, 56.5 109.5
+               L63.5 109.5
+               C66 109.5, 68 107.5, 68 105
+               L68 86.5
+               L75.5 86.5
+               C78 86.5, 80 84.5, 80 82
+               L80 62
+               C75 52, 60 46, 60 46 Z"
+            fill="url(#gradientPrimary)"
+          />
+
+          {/* Lotus base */}
+          <ellipse cx="60" cy="85" rx="24" ry="5" fill="url(#gradientSecondary)" opacity="0.3" />
+        </g>
+
+        {/* Gradient definitions */}
+        <defs>
+          <linearGradient id="gradientPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="rgb(119, 93, 208)" />
+            <stop offset="100%" stopColor="rgb(208, 93, 176)" />
+          </linearGradient>
+          <linearGradient id="gradientSecondary" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="rgb(208, 93, 176)" />
+            <stop offset="100%" stopColor="rgb(238, 147, 103)" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </motion.div>
   );
 }
 
@@ -29,33 +75,110 @@ export const WelcomeView = ({
   ref,
 }: React.ComponentProps<'div'> & WelcomeViewProps) => {
   return (
-    <div ref={ref}>
-      <section className="bg-background flex flex-col items-center justify-center text-center">
-        <WelcomeImage />
+    <div ref={ref} className="bg-background relative h-screen overflow-hidden">
+      {/* Clean section without backdrop blur */}
+      <section className="relative flex h-full flex-col items-center justify-center px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="max-w-3xl"
+        >
+          <WellnessIcon />
 
-        <p className="text-foreground max-w-prose pt-1 leading-6 font-medium">
-          Chat live with your voice AI agent
-        </p>
+          {/* Main heading with gradient text */}
+          <h1
+            className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl"
+            style={{
+              backgroundImage: 'linear-gradient(135deg, rgb(119, 93, 208) 0%, rgb(208, 93, 176) 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
+          >
+            Your Daily Wellness Companion
+          </h1>
 
-        <Button variant="primary" size="lg" onClick={onStartCall} className="mt-6 w-64 font-mono">
-          {startButtonText}
-        </Button>
+          <p className="text-muted-foreground mx-auto mb-4 max-w-xl text-lg leading-relaxed md:text-xl">
+            Check in with yourself. Set daily intentions. Build healthy habits.
+          </p>
+
+          <p className="text-foreground/70 mx-auto mb-10 max-w-md leading-relaxed">
+            Start a voice conversation to reflect on your mood, energy, and goals for the day.
+          </p>
+
+          {/* CTA Button with clean gradient */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+            className="mb-12"
+          >
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={onStartCall}
+              className="relative overflow-hidden px-10 py-6 text-lg font-semibold shadow-lg transition-shadow hover:shadow-xl"
+              style={{
+                background: 'linear-gradient(135deg, rgb(119, 93, 208) 0%, rgb(208, 93, 176) 100%)',
+                border: 'none',
+              }}
+            >
+              <span className="relative z-10">{startButtonText}</span>
+            </Button>
+          </motion.div>
+
+          {/* Feature pills - refined design */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="flex flex-wrap justify-center gap-3"
+          >
+            {[
+              { text: 'Track Mood', gradient: 'linear-gradient(135deg, rgb(119, 93, 208) 0%, rgb(208, 93, 176) 100%)' },
+              { text: 'Set Goals', gradient: 'linear-gradient(135deg, rgb(232, 103, 159) 0%, rgb(238, 147, 103) 100%)' },
+              { text: 'Daily Reflection', gradient: 'linear-gradient(135deg, rgb(96, 93, 208) 0%, rgb(119, 147, 208) 100%)' }
+            ].map((feature, i) => (
+              <motion.div
+                key={feature.text}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.4 + i * 0.1, duration: 0.4 }}
+                className="bg-card border-border flex items-center gap-2 rounded-full border px-6 py-2.5 text-sm font-medium shadow-sm transition-shadow hover:shadow-md"
+              >
+                <span
+                  className="flex h-5 w-5 items-center justify-center rounded-full text-xs font-bold text-white"
+                  style={{ background: feature.gradient }}
+                >
+                  ✓
+                </span>
+                <span className="text-foreground">{feature.text}</span>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
       </section>
 
-      <div className="fixed bottom-5 left-0 flex w-full items-center justify-center">
-        <p className="text-muted-foreground max-w-prose pt-1 text-xs leading-5 font-normal text-pretty md:text-sm">
-          Need help getting set up? Check out the{' '}
+      {/* Footer - clean and simple */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8, duration: 0.5 }}
+        className="fixed bottom-6 left-0 flex w-full items-center justify-center px-6"
+      >
+        <p className="text-muted-foreground text-center text-xs md:text-sm">
+          Powered by AI voice technology •{' '}
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://docs.livekit.io/agents/start/voice-ai/"
-            className="underline"
+            className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
           >
-            Voice AI quickstart
+            Learn more
           </a>
-          .
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
