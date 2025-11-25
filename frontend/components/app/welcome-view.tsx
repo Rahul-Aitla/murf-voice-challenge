@@ -3,8 +3,8 @@
 import { Button } from '@/components/livekit/button';
 import { motion } from 'motion/react';
 
-// Clean wellness icon without glow effects
-function WellnessIcon() {
+// upGrad Education icon
+function EducationIcon() {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -20,43 +20,34 @@ function WellnessIcon() {
         xmlns="http://www.w3.org/2000/svg"
         className="mx-auto"
       >
-        {/* Meditation Person */}
+        {/* Graduation Cap / Book Icon */}
         <g className="animate-pulse-slow">
-          {/* Head */}
-          <circle cx="60" cy="30" r="12" fill="url(#gradientPrimary)" />
+          {/* Book base */}
+          <rect x="30" y="50" width="60" height="45" rx="4" fill="url(#gradientUpGrad)" />
+          <rect x="35" y="55" width="50" height="35" rx="2" fill="rgba(255,255,255,0.2)" />
 
-          {/* Body */}
-          <path
-            d="M60 46 
-               C60 46, 45 52, 40 62
-               L40 82
-               C40 84.5, 42 86.5, 44.5 86.5
-               L52 86.5
-               L52 105
-               C52 107.5, 54 109.5, 56.5 109.5
-               L63.5 109.5
-               C66 109.5, 68 107.5, 68 105
-               L68 86.5
-               L75.5 86.5
-               C78 86.5, 80 84.5, 80 82
-               L80 62
-               C75 52, 60 46, 60 46 Z"
-            fill="url(#gradientPrimary)"
-          />
+          {/* Book pages */}
+          <line x1="60" y1="55" x2="60" y2="90" stroke="rgba(255,255,255,0.3)" strokeWidth="1" />
+          <line x1="40" y1="65" x2="55" y2="65" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" />
+          <line x1="65" y1="65" x2="80" y2="65" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" />
+          <line x1="40" y1="75" x2="55" y2="75" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" />
+          <line x1="65" y1="75" x2="80" y2="75" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" />
 
-          {/* Lotus base */}
-          <ellipse cx="60" cy="85" rx="24" ry="5" fill="url(#gradientSecondary)" opacity="0.3" />
+          {/* Graduation cap on top */}
+          <path d="M60 25 L35 35 L35 40 L60 50 L85 40 L85 35 Z" fill="url(#gradientOrange)" />
+          <circle cx="60" cy="25" r="4" fill="url(#gradientOrange)" />
+          <rect x="58" y="25" width="4" height="18" fill="url(#gradientOrange)" />
         </g>
 
-        {/* Gradient definitions */}
+        {/* Gradient definitions - upGrad colors */}
         <defs>
-          <linearGradient id="gradientPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="rgb(119, 93, 208)" />
-            <stop offset="100%" stopColor="rgb(208, 93, 176)" />
+          <linearGradient id="gradientUpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#5B2E90" /> {/* upGrad Purple */}
+            <stop offset="100%" stopColor="#7B4EBF" />
           </linearGradient>
-          <linearGradient id="gradientSecondary" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="rgb(208, 93, 176)" />
-            <stop offset="100%" stopColor="rgb(238, 147, 103)" />
+          <linearGradient id="gradientOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#FF6B35" /> {/* upGrad Orange */}
+            <stop offset="100%" stopColor="#FF8A5B" />
           </linearGradient>
         </defs>
       </svg>
@@ -84,27 +75,27 @@ export const WelcomeView = ({
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="max-w-3xl"
         >
-          <WellnessIcon />
+          <EducationIcon />
 
           {/* Main heading with gradient text */}
           <h1
             className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl"
             style={{
-              backgroundImage: 'linear-gradient(135deg, rgb(119, 93, 208) 0%, rgb(208, 93, 176) 100%)',
+              backgroundImage: 'linear-gradient(135deg, #5B2E90 0%, #FF6B35 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
             }}
           >
-            Your Daily Wellness Companion
+            upGrad Voice Learning
           </h1>
 
           <p className="text-muted-foreground mx-auto mb-4 max-w-xl text-lg leading-relaxed md:text-xl">
-            Check in with yourself. Set daily intentions. Build healthy habits.
+            Learn programming through interactive AI voice conversations
           </p>
 
           <p className="text-foreground/70 mx-auto mb-10 max-w-md leading-relaxed">
-            Start a voice conversation to reflect on your mood, energy, and goals for the day.
+            Choose your learning mode: Learn concepts, Quiz yourself, or Teach back to reinforce understanding.
           </p>
 
           {/* CTA Button with clean gradient */}
@@ -120,7 +111,7 @@ export const WelcomeView = ({
               onClick={onStartCall}
               className="relative overflow-hidden px-10 py-6 text-lg font-semibold shadow-lg transition-shadow hover:shadow-xl"
               style={{
-                background: 'linear-gradient(135deg, rgb(119, 93, 208) 0%, rgb(208, 93, 176) 100%)',
+                background: 'linear-gradient(135deg, #5B2E90 0%, #FF6B35 100%)',
                 border: 'none',
               }}
             >
@@ -136,9 +127,9 @@ export const WelcomeView = ({
             className="flex flex-wrap justify-center gap-3"
           >
             {[
-              { text: 'Track Mood', gradient: 'linear-gradient(135deg, rgb(119, 93, 208) 0%, rgb(208, 93, 176) 100%)' },
-              { text: 'Set Goals', gradient: 'linear-gradient(135deg, rgb(232, 103, 159) 0%, rgb(238, 147, 103) 100%)' },
-              { text: 'Daily Reflection', gradient: 'linear-gradient(135deg, rgb(96, 93, 208) 0%, rgb(119, 147, 208) 100%)' }
+              { text: 'Learn Mode', gradient: 'linear-gradient(135deg, #5B2E90 0%, #7B4EBF 100%)' },
+              { text: 'Quiz Mode', gradient: 'linear-gradient(135deg, #FF6B35 0%, #FF8A5B 100%)' },
+              { text: 'Teach Back Mode', gradient: 'linear-gradient(135deg, #5B2E90 0%, #FF6B35 100%)' }
             ].map((feature, i) => (
               <motion.div
                 key={feature.text}

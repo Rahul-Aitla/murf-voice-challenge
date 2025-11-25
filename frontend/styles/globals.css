@@ -6,115 +6,115 @@
 :root {
   --radius: 0.625rem;
 
-  /* Wellness-inspired color palette (Cult.Fit inspired) */
-  --background: oklch(0.99 0.005 280);
-  --foreground: oklch(0.15 0.02 280);
+  /* upGrad-inspired color palette - Premium EdTech */
+  --background: oklch(0.98 0.005 270);
+  --foreground: oklch(0.15 0.015 270);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.02 280);
+  --card-foreground: oklch(0.15 0.015 270);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.02 280);
+  --popover-foreground: oklch(0.15 0.015 270);
 
-  /* Vibrant purple primary (Cult.Fit signature) */
-  --primary: oklch(0.55 0.22 285);
+  /* upGrad Purple (Primary Brand Color) - #5B2E90 */
+  --primary: oklch(0.42 0.14 290);
   --primary-foreground: oklch(0.99 0 0);
 
-  /* Pink/Magenta accent */
-  --secondary: oklch(0.65 0.25 330);
+  /* upGrad Orange (Secondary/Accent) - #FF6B35 */
+  --secondary: oklch(0.68 0.19 35);
   --secondary-foreground: oklch(0.99 0 0);
 
-  --muted: oklch(0.96 0.01 280);
-  --muted-foreground: oklch(0.50 0.02 280);
+  --muted: oklch(0.96 0.01 270);
+  --muted-foreground: oklch(0.50 0.015 270);
 
-  /* Energetic pink accent */
-  --accent: oklch(0.70 0.20 340);
+  /* Vibrant Orange accent for CTAs */
+  --accent: oklch(0.72 0.20 40);
   --accent-foreground: oklch(0.99 0 0);
 
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.01 280);
-  --input: oklch(0.95 0.01 280);
-  --ring: oklch(0.55 0.22 285);
+  --border: oklch(0.92 0.01 270);
+  --input: oklch(0.96 0.01 270);
+  --ring: oklch(0.42 0.14 290);
 
-  /* Wellness-themed chart colors */
-  --chart-1: oklch(0.55 0.22 285);
-  /* Purple */
-  --chart-2: oklch(0.65 0.25 330);
-  /* Pink */
-  --chart-3: oklch(0.60 0.18 150);
-  /* Green (energy) */
-  --chart-4: oklch(0.70 0.20 60);
-  /* Yellow (optimism) */
-  --chart-5: oklch(0.65 0.20 200);
-  /* Blue (calm) */
+  /* upGrad-themed chart colors */
+  --chart-1: oklch(0.42 0.14 290);
+  /* Deep Purple */
+  --chart-2: oklch(0.68 0.19 35);
+  /* Orange */
+  --chart-3: oklch(0.55 0.16 160);
+  /* Green (success) */
+  --chart-4: oklch(0.75 0.15 85);
+  /* Yellow (highlight) */
+  --chart-5: oklch(0.60 0.15 250);
+  /* Blue (trust) */
 
-  --sidebar: oklch(0.98 0.005 280);
-  --sidebar-foreground: oklch(0.15 0.02 280);
-  --sidebar-primary: oklch(0.55 0.22 285);
+  --sidebar: oklch(0.98 0.005 270);
+  --sidebar-foreground: oklch(0.15 0.015 270);
+  --sidebar-primary: oklch(0.42 0.14 290);
   --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.95 0.01 280);
-  --sidebar-accent-foreground: oklch(0.15 0.02 280);
-  --sidebar-border: oklch(0.90 0.01 280);
-  --sidebar-ring: oklch(0.55 0.22 285);
+  --sidebar-accent: oklch(0.95 0.01 270);
+  --sidebar-accent-foreground: oklch(0.15 0.015 270);
+  --sidebar-border: oklch(0.92 0.01 270);
+  --sidebar-ring: oklch(0.42 0.14 290);
 
-  /* Custom wellness gradients */
-  --gradient-primary: linear-gradient(135deg, oklch(0.55 0.22 285) 0%, oklch(0.65 0.25 330) 100%);
-  --gradient-energy: linear-gradient(135deg, oklch(0.70 0.20 340) 0%, oklch(0.75 0.22 60) 100%);
-  --gradient-calm: linear-gradient(135deg, oklch(0.60 0.18 260) 0%, oklch(0.65 0.20 200) 100%);
+  /* upGrad brand gradients */
+  --gradient-primary: linear-gradient(135deg, oklch(0.42 0.14 290) 0%, oklch(0.52 0.16 310) 100%);
+  --gradient-accent: linear-gradient(135deg, oklch(0.68 0.19 35) 0%, oklch(0.78 0.20 45) 100%);
+  --gradient-brand: linear-gradient(135deg, oklch(0.42 0.14 290) 0%, oklch(0.68 0.19 35) 100%);
 }
 
 .dark {
-  /* Dark wellness theme */
-  --background: oklch(0.15 0.02 280);
-  --foreground: oklch(0.98 0.005 280);
-  --card: oklch(0.20 0.02 280);
-  --card-foreground: oklch(0.98 0.005 280);
-  --popover: oklch(0.22 0.02 280);
-  --popover-foreground: oklch(0.98 0.005 280);
+  /* upGrad Dark Mode - Premium EdTech Theme */
+  --background: oklch(0.12 0.015 270);
+  --foreground: oklch(0.98 0.005 270);
+  --card: oklch(0.16 0.015 270);
+  --card-foreground: oklch(0.98 0.005 270);
+  --popover: oklch(0.18 0.015 270);
+  --popover-foreground: oklch(0.98 0.005 270);
 
-  /* Brighter purple primary for dark mode */
-  --primary: oklch(0.65 0.24 285);
+  /* Brighter upGrad Purple for dark mode */
+  --primary: oklch(0.55 0.16 290);
   --primary-foreground: oklch(0.99 0 0);
 
-  /* Vibrant pink secondary */
-  --secondary: oklch(0.70 0.25 330);
+  /* Vibrant Orange for dark mode */
+  --secondary: oklch(0.72 0.20 35);
   --secondary-foreground: oklch(0.99 0 0);
 
-  --muted: oklch(0.25 0.02 280);
-  --muted-foreground: oklch(0.65 0.02 280);
+  --muted: oklch(0.20 0.015 270);
+  --muted-foreground: oklch(0.65 0.015 270);
 
-  /* Bright pink accent for dark mode */
-  --accent: oklch(0.75 0.22 340);
+  /* Bright Orange accent for dark mode */
+  --accent: oklch(0.75 0.22 40);
   --accent-foreground: oklch(0.99 0 0);
 
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.30 0.02 280 / 50%);
-  --input: oklch(0.28 0.02 280);
-  --ring: oklch(0.65 0.24 285);
+  --border: oklch(0.25 0.015 270 / 50%);
+  --input: oklch(0.22 0.015 270);
+  --ring: oklch(0.55 0.16 290);
 
   /* Dark mode chart colors */
-  --chart-1: oklch(0.65 0.24 285);
+  --chart-1: oklch(0.55 0.16 290);
   /* Purple */
-  --chart-2: oklch(0.70 0.25 330);
-  /* Pink */
-  --chart-3: oklch(0.65 0.20 150);
+  --chart-2: oklch(0.72 0.20 35);
+  /* Orange */
+  --chart-3: oklch(0.60 0.18 160);
   /* Green */
-  --chart-4: oklch(0.75 0.22 60);
+  --chart-4: oklch(0.78 0.18 85);
   /* Yellow */
-  --chart-5: oklch(0.70 0.22 200);
+  --chart-5: oklch(0.65 0.18 250);
   /* Blue */
 
-  --sidebar: oklch(0.18 0.02 280);
-  --sidebar-foreground: oklch(0.98 0.005 280);
-  --sidebar-primary: oklch(0.65 0.24 285);
+  --sidebar: oklch(0.14 0.015 270);
+  --sidebar-foreground: oklch(0.98 0.005 270);
+  --sidebar-primary: oklch(0.55 0.16 290);
   --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.25 0.02 280);
-  --sidebar-accent-foreground: oklch(0.98 0.005 280);
-  --sidebar-border: oklch(0.30 0.02 280 / 50%);
-  --sidebar-ring: oklch(0.60 0.20 285);
+  --sidebar-accent: oklch(0.20 0.015 270);
+  --sidebar-accent-foreground: oklch(0.98 0.005 270);
+  --sidebar-border: oklch(0.25 0.015 270 / 50%);
+  --sidebar-ring: oklch(0.55 0.16 290);
 
-  /* Dark mode gradients */
-  --gradient-primary: linear-gradient(135deg, oklch(0.65 0.24 285) 0%, oklch(0.70 0.25 330) 100%);
-  --gradient-energy: linear-gradient(135deg, oklch(0.75 0.22 340) 0%, oklch(0.80 0.24 60) 100%);
-  --gradient-calm: linear-gradient(135deg, oklch(0.65 0.20 260) 0%, oklch(0.70 0.22 200) 100%);
+  /* Dark mode upGrad gradients */
+  --gradient-primary: linear-gradient(135deg, oklch(0.55 0.16 290) 0%, oklch(0.62 0.18 310) 100%);
+  --gradient-accent: linear-gradient(135deg, oklch(0.72 0.20 35) 0%, oklch(0.80 0.22 45) 100%);
+  --gradient-brand: linear-gradient(135deg, oklch(0.55 0.16 290) 0%, oklch(0.72 0.20 35) 100%);
 }
 
 @theme inline {
@@ -201,7 +201,7 @@
     }
   }
 
-  /* Wellness-specific animations */
+  /* upGrad-specific animations */
   .animate-pulse-slow {
     animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
@@ -216,5 +216,17 @@
     50% {
       opacity: 0.7;
     }
+  }
+
+  /* upGrad Brand Gradient */
+  .bg-upgrad-gradient {
+    background: var(--gradient-brand);
+  }
+
+  .text-upgrad-gradient {
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

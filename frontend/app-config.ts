@@ -20,9 +20,9 @@ export interface AppConfig {
 }
 
 export const APP_CONFIG_DEFAULTS: AppConfig = {
-  companyName: 'LiveKit',
-  pageTitle: 'LiveKit Voice Agent',
-  pageDescription: 'A voice agent built with LiveKit',
+  companyName: 'upGrad',
+  pageTitle: 'upGrad Voice Learning - AI Tutor',
+  pageDescription: 'Learn programming through interactive voice conversations with AI',
 
   supportsChatInput: true,
   supportsVideoInput: true,
@@ -30,10 +30,10 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   isPreConnectBufferEnabled: true,
 
   logo: '/lk-logo.svg',
-  accent: '#002cf2',
+  accent: '#5B2E90', // upGrad Purple
   logoDark: '/lk-logo-dark.svg',
-  accentDark: '#1fd5f9',
-  startButtonText: 'Start call',
+  accentDark: '#7B4EBF', // Lighter upGrad Purple for dark mode
+  startButtonText: 'Start Learning',
 
   // for LiveKit Cloud Sandbox
   sandboxId: undefined,

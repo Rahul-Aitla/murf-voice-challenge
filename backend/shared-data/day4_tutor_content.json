@@ -1,0 +1,32 @@
+[
+  {
+    "id": "variables",
+    "title": "Variables",
+    "summary": "Variables are containers that store values in your program. Think of them like labeled boxes where you can put different types of data - numbers, text, or even more complex information. You can create a variable, assign it a value, and then use that value anywhere in your code. For example, if you store someone's name in a variable called 'userName', you can use that variable throughout your program instead of typing the name repeatedly. Variables make your code reusable, easier to update, and more readable.",
+    "sample_question": "What is a variable and why is it useful in programming?"
+  },
+  {
+    "id": "loops",
+    "title": "Loops",
+    "summary": "Loops are programming structures that let you repeat a set of instructions multiple times without writing the same code over and over. There are different types of loops: 'for loops' are great when you know exactly how many times you want to repeat something, like counting from 1 to 10. 'While loops' are better when you want to keep doing something until a certain condition is met, like asking for user input until they give a valid answer. Loops save you time, make your code more efficient, and are essential for tasks like processing lists of data or creating animations.",
+    "sample_question": "Explain the difference between a for loop and a while loop, and when you would use each one."
+  },
+  {
+    "id": "functions",
+    "title": "Functions",
+    "summary": "Functions are reusable blocks of code that perform a specific task. They're like recipes in a cookbook - once you write the instructions, you can use them over and over without rewriting everything. Functions can take inputs (called parameters or arguments), do something with those inputs, and return a result. For example, you might create a function called 'calculateArea' that takes width and height as inputs and returns the area. Functions help organize your code, make it more maintainable, reduce repetition, and allow you to break complex problems into smaller, manageable pieces.",
+    "sample_question": "What is a function? Describe how parameters and return values work."
+  },
+  {
+    "id": "conditionals",
+    "title": "Conditionals (If/Else)",
+    "summary": "Conditionals are decision-making structures in programming that allow your code to choose different paths based on certain conditions. The most common conditional is the 'if statement', which checks whether something is true or false. If the condition is true, the code inside the if block runs. You can also use 'else' to specify what should happen when the condition is false, and 'else if' to check multiple conditions in sequence. Conditionals are fundamental to creating dynamic, responsive programs - like showing different messages based on the time of day, or validating user input before processing it.",
+    "sample_question": "How do if/else statements work? Give an example of when you'd use them."
+  },
+  {
+    "id": "arrays",
+    "title": "Arrays (Lists)",
+    "summary": "Arrays, also called lists in some languages, are data structures that store multiple values in a single variable. Imagine a shopping list - instead of creating separate variables for each item, you can store all items in one array. Each item in an array has a position (called an index), usually starting from 0. Arrays are incredibly useful for managing collections of related data, like a list of student names, temperatures for each day of the week, or items in a shopping cart. You can add items, remove items, search through the array, and perform operations on all items at once using loops.",
+    "sample_question": "What is an array? How do you access individual elements, and why are arrays useful?"
+  }
+]
