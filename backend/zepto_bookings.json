@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Rahul",
+    "email": "Rahul@xyz.com",
+    "slot": "Tomorrow at 2:00 PM",
+    "status": "confirmed"
+  },
+  {
+    "name": "Rahul",
+    "email": "Rahul@redxyz.com",
+    "slot": "Thursday at 4:00 PM",
+    "status": "confirmed"
+  }
+]

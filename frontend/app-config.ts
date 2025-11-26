@@ -20,20 +20,20 @@ export interface AppConfig {
 }
 
 export const APP_CONFIG_DEFAULTS: AppConfig = {
-  companyName: 'upGrad',
-  pageTitle: 'upGrad Voice Learning - AI Tutor',
-  pageDescription: 'Learn programming through interactive voice conversations with AI',
+  companyName: 'Zepto',
+  pageTitle: 'Zepto SDR - AI Voice Assistant',
+  pageDescription: 'Talk to Zepto\'s AI-powered Sales Development Representative',
 
   supportsChatInput: true,
-  supportsVideoInput: true,
-  supportsScreenShare: true,
+  supportsVideoInput: false,
+  supportsScreenShare: false,
   isPreConnectBufferEnabled: true,
 
   logo: '/lk-logo.svg',
-  accent: '#5B2E90', // upGrad Purple
+  accent: '#7C3AED', // Zepto Purple
   logoDark: '/lk-logo-dark.svg',
-  accentDark: '#7B4EBF', // Lighter upGrad Purple for dark mode
-  startButtonText: 'Start Learning',
+  accentDark: '#E91E8C', // Zepto Pink
+  startButtonText: 'Start Voice Demo',
 
   // for LiveKit Cloud Sandbox
   sandboxId: undefined,

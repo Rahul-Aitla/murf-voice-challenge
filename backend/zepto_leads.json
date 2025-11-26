@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Rahul",
+    "email": "rajul@gmail.com",
+    "company": "Freelancer",
+    "role": "Freelance Developer",
+    "use_case": "Personal use (ordering food and essentials)",
+    "team_size": "1 (individual)",
+    "timeline": "N/A",
+    "conversation_length": 0,
+    "call_summary": "Spoke with Rahul from Freelancer. Interested in using Zepto for Personal use (ordering food and essentials). Timeline: N/A.",
+    "timestamp": "2025-11-25T23:42:11.757444",
+    "lead_id": "ZEPTO-20251125234211"
+  },
+  {
+    "conversation_length": 0,
+    "call_summary": "Spoke with prospect from N/A. Interested in using Zepto for general shopping. Timeline: not specified.",
+    "timestamp": "2025-11-25T23:52:03.677807",
+    "lead_id": "ZEPTO-20251125235203"
+  },
+  {"summary": "The user wants to know about Zepto. The user is a freelancer. The user wants to book a meeting for website automations.", "lead_data": "Name: Rahul, Email: Rahul@xyz.com, Company: N/A, Use Case: Website automations", "timestamp": "2025-11-26T01:19:22.782133"},
+{"summary": "Scheduled a meeting for Rahul from Zepto on Thursday at 4:00 PM to discuss using Zepto for daily essentials.", "lead_data": "Name: Rahul, Email: Rahul@redxyz.com, Company: Zepto, Use Case: Daily Essentials", "timestamp": "2025-11-26T01:26:33.280449"}
+]

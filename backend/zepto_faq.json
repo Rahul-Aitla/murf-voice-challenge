@@ -1,0 +1,268 @@
+{
+    "company_name": "Zepto",
+    "company_description": "Zepto is India's leading quick commerce platform, delivering groceries and essentials to your doorstep in just 10 minutes. Founded in 2021, we've revolutionized how India shops for daily needs with our ultra-fast delivery network across major cities.",
+    "tagline": "India's Fastest Grocery Delivery - Get It in 10 Minutes!",
+    "founded": "2021",
+    "headquarters": "Mumbai, India",
+    "cities_available": [
+        "Mumbai",
+        "Bangalore",
+        "Delhi",
+        "Pune",
+        "Chennai",
+        "Hyderabad",
+        "Kolkata",
+        "Ahmedabad",
+        "Jaipur",
+        "and more"
+    ],
+    "faq": [
+        {
+            "question": "What does Zepto do?",
+            "answer": "Zepto is a quick commerce platform that delivers groceries, fresh produce, household essentials, personal care items, electronics, and even medicines to your doorstep in just 10 minutes. We use a network of dark stores strategically located in your neighborhood to ensure lightning-fast delivery.",
+            "keywords": [
+                "what",
+                "do",
+                "service",
+                "about",
+                "company"
+            ]
+        },
+        {
+            "question": "How fast is Zepto's delivery?",
+            "answer": "We deliver in 10 minutes! That's our promise. Our network of micro-warehouses (dark stores) is strategically positioned across cities to ensure ultra-fast delivery times. Most orders are fulfilled within 10 minutes of placing them.",
+            "keywords": [
+                "fast",
+                "delivery",
+                "time",
+                "quick",
+                "minutes",
+                "speed"
+            ]
+        },
+        {
+            "question": "What are Zepto's delivery charges?",
+            "answer": "Zepto offers FREE delivery on all orders above ₹99. For orders below ₹99, we charge a flat delivery fee of just ₹30. We've eliminated all handling fees, surge charges, and rain fees - so what you see is what you pay!",
+            "keywords": [
+                "price",
+                "pricing",
+                "delivery",
+                "charges",
+                "fee",
+                "cost",
+                "free"
+            ]
+        },
+        {
+            "question": "Is there a minimum order value?",
+            "answer": "No minimum order value! You can order items worth even ₹50, and you'll only pay a flat ₹30 delivery fee. For orders above ₹99, delivery is completely FREE.",
+            "keywords": [
+                "minimum",
+                "order",
+                "value",
+                "amount"
+            ]
+        },
+        {
+            "question": "What products can I order from Zepto?",
+            "answer": "Zepto offers a wide range of products: Groceries & Staples, Fresh Fruits & Vegetables, Dairy Products, Snacks & Beverages, Personal Care & Beauty, Household Essentials, Pet Care, Electronics & Gadgets, Ready-to-eat Food (Zepto Cafe), and Medicines (Zepto Pharmacy in select cities). We have over 6,000+ products available!",
+            "keywords": [
+                "products",
+                "items",
+                "sell",
+                "available",
+                "categories",
+                "what can i buy"
+            ]
+        },
+        {
+            "question": "Do you have any membership or subscription plans?",
+            "answer": "Yes! Zepto Pass is our premium membership program that offers unlimited free delivery on all orders above ₹99, exclusive deals, and early access to sales. We have over 4 million active Zepto Pass members enjoying these benefits!",
+            "keywords": [
+                "membership",
+                "subscription",
+                "zepto pass",
+                "premium",
+                "plan"
+            ]
+        },
+        {
+            "question": "Which cities is Zepto available in?",
+            "answer": "Zepto is available in major cities across India including Mumbai, Delhi NCR, Bangalore, Pune, Hyderabad, Chennai, Kolkata, Ahmedabad, Jaipur, Chandigarh, and many more. We're rapidly expanding to new cities every month!",
+            "keywords": [
+                "cities",
+                "locations",
+                "available",
+                "where",
+                "area",
+                "service"
+            ]
+        },
+        {
+            "question": "How does Zepto deliver so fast?",
+            "answer": "Our secret is our network of dark stores (micro-warehouses) strategically located within 2-3 km of our customers. When you place an order, it's picked, packed, and dispatched from the nearest dark store by our trained delivery partners on two-wheelers, ensuring 10-minute delivery.",
+            "keywords": [
+                "how",
+                "fast",
+                "technology",
+                "work",
+                "dark store"
+            ]
+        },
+        {
+            "question": "Is Zepto available 24/7?",
+            "answer": "Most Zepto stores operate from 6 AM to 2 AM, giving you 20 hours of daily service! Timings may vary slightly based on your location. Check the app for exact timings in your area.",
+            "keywords": [
+                "timing",
+                "hours",
+                "24/7",
+                "when",
+                "available",
+                "open"
+            ]
+        },
+        {
+            "question": "How can I contact Zepto support?",
+            "answer": "Zepto offers 24x7 in-app chat support. Simply open the app, go to your profile, and click on 'Help & Support' to chat with our customer service team. We don't have a phone support line to avoid spam and ensure secure communication.",
+            "keywords": [
+                "support",
+                "help",
+                "contact",
+                "customer service",
+                "issue",
+                "problem"
+            ]
+        },
+        {
+            "question": "What's Zepto Cafe?",
+            "answer": "Zepto Cafe is our ready-to-eat food section where you can order fresh coffee, sandwiches, snacks, and meals - all delivered in 10 minutes! Perfect for breakfast, quick lunches, or evening snacks.",
+            "keywords": [
+                "cafe",
+                "food",
+                "coffee",
+                "ready to eat",
+                "meals"
+            ]
+        },
+        {
+            "question": "Does Zepto deliver medicines?",
+            "answer": "Yes! Zepto Pharmacy delivers medicines and healthcare products in select cities like Mumbai, Bangalore, and Delhi NCR. We're expanding this service to more cities soon. All medicines are sourced from licensed pharmacies.",
+            "keywords": [
+                "pharmacy",
+                "medicine",
+                "healthcare",
+                "drugs",
+                "prescription"
+            ]
+        },
+        {
+            "question": "Who is Zepto for?",
+            "answer": "Zepto is perfect for anyone who values their time! Busy professionals, parents who can't step out, students needing quick supplies, elderly people who prefer doorstep delivery, or anyone who needs groceries RIGHT NOW. We serve everyone from individuals to small businesses and offices.",
+            "keywords": [
+                "who",
+                "target",
+                "audience",
+                "for whom",
+                "customer"
+            ]
+        },
+        {
+            "question": "How do I place an order?",
+            "answer": "Simply download the Zepto app from Play Store or App Store, enter your delivery address, browse products, add items to cart, and checkout. Payment can be made via UPI, credit/debit cards, or cash on delivery. Your order will arrive in 10 minutes!",
+            "keywords": [
+                "order",
+                "how to",
+                "place",
+                "buy",
+                "purchase",
+                "app"
+            ]
+        },
+        {
+            "question": "What payment methods do you accept?",
+            "answer": "We accept all major payment methods: UPI (Google Pay, PhonePe, Paytm), Credit/Debit Cards, Net Banking, Wallets, and Cash on Delivery. All transactions are 100% secure.",
+            "keywords": [
+                "payment",
+                "pay",
+                "method",
+                "cash",
+                "card",
+                "upi"
+            ]
+        }
+    ],
+    "pricing": {
+        "delivery_fee_free_threshold": 99,
+        "delivery_fee_below_threshold": 30,
+        "handling_fees": 0,
+        "surge_charges": 0,
+        "rain_fees": 0,
+        "currency": "INR",
+        "membership": {
+            "name": "Zepto Pass",
+            "benefits": [
+                "Unlimited FREE delivery on orders above ₹99",
+                "Exclusive deals and discounts",
+                "Early access to sales",
+                "Priority customer support"
+            ]
+        }
+    },
+    "key_features": [
+        "10-minute delivery guarantee",
+        "6,000+ products available",
+        "No surge or handling charges",
+        "Fresh fruits, vegetables, and groceries",
+        "Medicines delivery (select cities)",
+        "24x7 customer support",
+        "Multiple payment options",
+        "Quality guarantee and easy returns"
+    ],
+    "target_customers": [
+        {
+            "persona": "Busy Professionals",
+            "pain_points": [
+                "No time to visit stores",
+                "Unpredictable work hours",
+                "Need quick meal solutions"
+            ],
+            "pitch": "Save hours every week with 10-minute grocery delivery. Focus on your work while we handle your shopping. Perfect for late-night cravings or early morning needs!"
+        },
+        {
+            "persona": "Parents & Families",
+            "pain_points": [
+                "Can't leave kids alone",
+                "Need baby products urgently",
+                "Weekly grocery shopping is time-consuming"
+            ],
+            "pitch": "Never run out of baby essentials or groceries again! Get diapers, milk, or any household item delivered in 10 minutes without leaving your kids."
+        },
+        {
+            "persona": "Students",
+            "pain_points": [
+                "Limited budget",
+                "Late night study snacks",
+                "No vehicle to carry groceries"
+            ],
+            "pitch": "Study without interruptions! Get instant noodles, energy drinks, or midnight snacks delivered to your hostel or PG in just 10 minutes."
+        },
+        {
+            "persona": "Elderly",
+            "pain_points": [
+                "Difficult to carry heavy bags",
+                "Health mobility issues",
+                "Need medicines quickly"
+            ],
+            "pitch": "No more heavy bags or long walks to stores. Get everything from medicines to groceries delivered to your doorstep. Our app is simple to use, and we're here 24x7."
+        },
+        {
+            "persona": "Small Business Owners",
+            "pain_points": [
+                "Need supplies during business hours",
+                "Bulk purchases",
+                "Quick restocking"
+            ],
+            "pitch": "Running low on office supplies or café ingredients? Get instant restocking in 10 minutes so you never have to close shop or make customers wait."
+        }
+    ]
+}

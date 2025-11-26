@@ -5,7 +5,9 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useRoomContext } from '@livekit/components-react';
 import { useSession } from '@/components/app/session-provider';
 import { SessionView } from '@/components/app/session-view';
-import { WelcomeView } from '@/components/app/welcome-view';
+// Day 5: Using Zepto SDR Agent branded UI
+import { WelcomeView } from '@/components/app/zepto-welcome-view';
+// To switch back to original: import { WelcomeView } from '@/components/app/welcome-view';
 
 const MotionWelcomeView = motion.create(WelcomeView);
 const MotionSessionView = motion.create(SessionView);
@@ -19,14 +21,14 @@ const VIEW_MOTION_PROPS = {
       opacity: 0,
     },
   },
-  initial: 'hidden',
-  animate: 'visible',
-  exit: 'hidden',
+  initial: 'hidden' as const,
+  animate: 'visible' as const,
+  exit: 'hidden' as const,
   transition: {
     duration: 0.5,
-    ease: 'linear',
+    ease: [0, 0, 1, 1], // linear easing as cubic bezier
   },
-};
+} as const;
 
 export function ViewController() {
   const room = useRoomContext();
