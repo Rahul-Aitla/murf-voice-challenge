@@ -20,9 +20,9 @@ export interface AppConfig {
 }
 
 export const APP_CONFIG_DEFAULTS: AppConfig = {
-  companyName: 'Zepto',
-  pageTitle: 'Zepto SDR - AI Voice Assistant',
-  pageDescription: 'Talk to Zepto\'s AI-powered Sales Development Representative',
+  companyName: 'FamPay',
+  pageTitle: 'FamPay Fraud Alert - AI Voice Assistant',
+  pageDescription: 'Talk to FamPay\'s AI-powered Fraud Alert Agent',
 
   supportsChatInput: true,
   supportsVideoInput: false,
@@ -30,10 +30,10 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   isPreConnectBufferEnabled: true,
 
   logo: '/lk-logo.svg',
-  accent: '#7C3AED', // Zepto Purple
+  accent: '#F6A316', 
   logoDark: '/lk-logo-dark.svg',
-  accentDark: '#E91E8C', // Zepto Pink
-  startButtonText: 'Start Voice Demo',
+  accentDark: '#F6A316', 
+  startButtonText: 'Start Fraud Alert Demo',
 
   // for LiveKit Cloud Sandbox
   sandboxId: undefined,

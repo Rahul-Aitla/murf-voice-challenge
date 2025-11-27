@@ -36,7 +36,7 @@ const BOTTOM_VIEW_MOTION_PROPS = {
   transition: {
     duration: 0.3,
     delay: 0.5,
-    ease: [0, 0, 1, 1], // linear
+    ease: "linear" as const,
   },
 };
 
@@ -91,7 +91,7 @@ export const SessionView = ({
   }, [messages]);
 
   return (
-    <section className="relative z-10 h-full w-full overflow-hidden bg-gradient-to-br from-purple-50 via-purple-50 to-pink-50" {...props}>
+    <section className="relative z-10 h-full w-full overflow-hidden bg-[#FAFAFA]" {...props}>
       {/* Chat Transcript */}
       <div
         className={cn(

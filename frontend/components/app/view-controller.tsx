@@ -5,8 +5,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useRoomContext } from '@livekit/components-react';
 import { useSession } from '@/components/app/session-provider';
 import { SessionView } from '@/components/app/session-view';
-// Day 5: Using Zepto SDR Agent branded UI
-import { WelcomeView } from '@/components/app/zepto-welcome-view';
+import { WelcomeView } from '@/components/app/fampay-welcome-view';
 // To switch back to original: import { WelcomeView } from '@/components/app/welcome-view';
 
 const MotionWelcomeView = motion.create(WelcomeView);
