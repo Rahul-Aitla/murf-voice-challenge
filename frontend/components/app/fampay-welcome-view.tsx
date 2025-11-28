@@ -42,13 +42,21 @@ interface WelcomeViewProps {
     onStartCall: () => void;
 }
 
-import { forwardRef } from 'react';
+import { forwardRef, useState } from 'react';
 
 export const WelcomeView = forwardRef<HTMLDivElement, React.ComponentProps<'div'> & WelcomeViewProps>(({
     startButtonText,
     onStartCall,
     ...props
 }, ref) => {
+    const [voiceId, setVoiceId] = useState('en-US-cooper');
+    const [language, setLanguage] = useState('en-US');
+
+    const handleStart = () => {
+        // @ts-ignore
+        onStartCall({ voiceId, language });
+    };
+
     return (
         <div ref={ref} {...props} className="min-h-screen bg-[#FAFAFA] text-black font-sans overflow-x-hidden">
             {/* Header */}
@@ -171,6 +179,34 @@ export const WelcomeView = forwardRef<HTMLDivElement, React.ComponentProps<'div'
                                 </p>
                             </div>
 
+                            {/* Voice Settings */}
+                            <div className="mb-6 space-y-4">
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Voice</label>
+                                    <select
+                                        value={voiceId}
+                                        onChange={(e) => setVoiceId(e.target.value)}
+                                        className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm focus:border-[#F6A316] focus:outline-none focus:ring-1 focus:ring-[#F6A316]"
+                                    >
+                                        <option value="en-US-cooper">Cooper (US Male)</option>
+                                        <option value="en-US-denise">Denise (US Female)</option>
+                                        <option value="en-UK-ryan">Ryan (UK Male)</option>
+                                        <option value="hi-IN-anusha">Anusha (Hindi Female)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Language</label>
+                                    <select
+                                        value={language}
+                                        onChange={(e) => setLanguage(e.target.value)}
+                                        className="w-full rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm focus:border-[#F6A316] focus:outline-none focus:ring-1 focus:ring-[#F6A316]"
+                                    >
+                                        <option value="en-US">English (US)</option>
+                                        <option value="hi-IN">Hindi</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             {/* Primary CTA */}
                             <motion.div
                                 whileHover={{ scale: 1.02 }}
@@ -178,7 +214,7 @@ export const WelcomeView = forwardRef<HTMLDivElement, React.ComponentProps<'div'
                                 className="mb-6"
                             >
                                 <Button
-                                    onClick={onStartCall}
+                                    onClick={handleStart}
                                     className="group relative w-full overflow-hidden rounded-2xl bg-black px-8 py-6 text-lg font-bold text-white shadow-xl transition-all hover:bg-gray-900 hover:shadow-2xl"
                                 >
                                     <span className="relative z-10 flex items-center justify-center gap-3">

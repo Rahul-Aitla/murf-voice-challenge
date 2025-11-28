@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useRoomContext } from '@livekit/components-react';
 import { useSession } from '@/components/app/session-provider';
 import { SessionView } from '@/components/app/session-view';
-import { WelcomeView } from '@/components/app/fampay-welcome-view';
+import { WelcomeView } from '@/components/app/zomato-welcome-view';
 // To switch back to original: import { WelcomeView } from '@/components/app/welcome-view';
 
 const MotionWelcomeView = motion.create(WelcomeView);

@@ -1,0 +1,256 @@
+[
+    {
+        "id": "item_001",
+        "name": "Britannia Whole Wheat Bread",
+        "category": "Groceries",
+        "price": 50.00,
+        "attributes": {
+            "brand": "Britannia",
+            "size": "450g",
+            "tags": [
+                "bread",
+                "healthy"
+            ]
+        }
+    },
+    {
+        "id": "item_002",
+        "name": "Amul Taaza Milk",
+        "category": "Groceries",
+        "price": 72.00,
+        "attributes": {
+            "brand": "Amul",
+            "size": "1L",
+            "tags": [
+                "dairy",
+                "calcium"
+            ]
+        }
+    },
+    {
+        "id": "item_003",
+        "name": "Amul Butter",
+        "category": "Groceries",
+        "price": 56.00,
+        "attributes": {
+            "brand": "Amul",
+            "size": "100g",
+            "tags": [
+                "dairy",
+                "fat"
+            ]
+        }
+    },
+    {
+        "id": "item_004",
+        "name": "Pintola Peanut Butter",
+        "category": "Groceries",
+        "price": 175.00,
+        "attributes": {
+            "brand": "Pintola",
+            "size": "350g",
+            "type": "Creamy",
+            "tags": [
+                "protein",
+                "nuts"
+            ]
+        }
+    },
+    {
+        "id": "item_005",
+        "name": "Kissan Mixed Fruit Jam",
+        "category": "Groceries",
+        "price": 160.00,
+        "attributes": {
+            "brand": "Kissan",
+            "size": "500g",
+            "tags": [
+                "sweet",
+                "fruit"
+            ]
+        }
+    },
+    {
+        "id": "item_006",
+        "name": "Maggi Noodles",
+        "category": "Snacks",
+        "price": 14.00,
+        "attributes": {
+            "brand": "Nestle",
+            "size": "70g",
+            "tags": [
+                "instant",
+                "snack"
+            ]
+        }
+    },
+    {
+        "id": "item_007",
+        "name": "Tata Sampann Toor Dal",
+        "category": "Groceries",
+        "price": 165.00,
+        "attributes": {
+            "brand": "Tata Sampann",
+            "size": "1kg",
+            "tags": [
+                "pulses",
+                "protein"
+            ]
+        }
+    },
+    {
+        "id": "item_008",
+        "name": "Daawat Basmati Rice",
+        "category": "Groceries",
+        "price": 90.00,
+        "attributes": {
+            "brand": "Daawat",
+            "size": "1kg",
+            "tags": [
+                "grains",
+                "rice"
+            ]
+        }
+    },
+    {
+        "id": "item_009",
+        "name": "Haldiram's Aloo Bhujia",
+        "category": "Snacks",
+        "price": 48.00,
+        "attributes": {
+            "brand": "Haldiram's",
+            "size": "200g",
+            "tags": [
+                "salty",
+                "snack"
+            ]
+        }
+    },
+    {
+        "id": "item_010",
+        "name": "Lay's Magic Masala",
+        "category": "Snacks",
+        "price": 20.00,
+        "attributes": {
+            "brand": "Lay's",
+            "flavor": "Magic Masala",
+            "size": "50g",
+            "tags": [
+                "salty",
+                "chips"
+            ]
+        }
+    },
+    {
+        "id": "item_011",
+        "name": "Tata Tea Gold",
+        "category": "Groceries",
+        "price": 320.00,
+        "attributes": {
+            "brand": "Tata",
+            "size": "500g",
+            "tags": [
+                "beverage",
+                "tea"
+            ]
+        }
+    },
+    {
+        "id": "item_012",
+        "name": "Madhur Sugar",
+        "category": "Groceries",
+        "price": 60.00,
+        "attributes": {
+            "brand": "Madhur",
+            "size": "1kg",
+            "tags": [
+                "sweetener",
+                "baking"
+            ]
+        }
+    },
+    {
+        "id": "item_013",
+        "name": "Tata Salt",
+        "category": "Groceries",
+        "price": 28.00,
+        "attributes": {
+            "brand": "Tata",
+            "size": "1kg",
+            "tags": [
+                "seasoning",
+                "iodized"
+            ]
+        }
+    },
+    {
+        "id": "item_014",
+        "name": "Bambino Macaroni",
+        "category": "Groceries",
+        "price": 45.00,
+        "attributes": {
+            "brand": "Bambino",
+            "size": "200g",
+            "tags": [
+                "pasta",
+                "italian"
+            ]
+        }
+    },
+    {
+        "id": "item_015",
+        "name": "Smith & Jones Pasta Masala",
+        "category": "Groceries",
+        "price": 10.00,
+        "attributes": {
+            "brand": "Smith & Jones",
+            "size": "10g",
+            "tags": [
+                "spice",
+                "mix"
+            ]
+        }
+    },
+    {
+        "id": "item_016",
+        "name": "Amul Cheese Slices",
+        "category": "Groceries",
+        "price": 145.00,
+        "attributes": {
+            "brand": "Amul",
+            "size": "200g",
+            "tags": [
+                "dairy",
+                "cheese"
+            ]
+        }
+    },
+    {
+        "id": "item_017",
+        "name": "Coca-Cola",
+        "category": "Snacks",
+        "price": 40.00,
+        "attributes": {
+            "brand": "Coca-Cola",
+            "size": "750ml",
+            "tags": [
+                "drink",
+                "soda"
+            ]
+        }
+    },
+    {
+        "id": "item_018",
+        "name": "Farmley Makhana",
+        "category": "Snacks",
+        "price": 200.00,
+        "attributes": {
+            "brand": "Farmley",
+            "size": "100g",
+            "tags": [
+                "healthy",
+                "snack"
+            ]
+        }
+    }
+]

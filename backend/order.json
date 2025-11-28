@@ -1,9 +1,0 @@
-{
-  "drinkType": "Espresso",
-  "size": "Medium",
-  "milk": "Almond",
-  "extras": [
-    "Extra Sugar"
-  ],
-  "name": "LiveKit voice agent"
-}

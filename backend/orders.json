@@ -1,0 +1,32 @@
+[
+  {
+    "order_id": "ORD-1764270325",
+    "customer_name": "Rahul",
+    "timestamp": "2025-11-28T00:35:25.340680",
+    "items": [
+      {
+        "id": "item_002",
+        "name": "Amul Taaza Milk",
+        "price": 72.0,
+        "quantity": 1,
+        "notes": ""
+      },
+      {
+        "id": "item_001",
+        "name": "Britannia Whole Wheat Bread",
+        "price": 50.0,
+        "quantity": 2,
+        "notes": ""
+      },
+      {
+        "id": "item_016",
+        "name": "Amul Cheese Slices",
+        "price": 145.0,
+        "quantity": 1,
+        "notes": ""
+      }
+    ],
+    "total_amount": 317.0,
+    "status": "placed"
+  }
+]
