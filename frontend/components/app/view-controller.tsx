@@ -5,11 +5,12 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useRoomContext } from '@livekit/components-react';
 import { useSession } from '@/components/app/session-provider';
 import { SessionView } from '@/components/app/session-view';
-import { WelcomeView } from '@/components/app/fampay-welcome-view';
+import { GameMasterView } from '@/components/app/game-master-view';
+import { GameMasterWelcomeView } from '@/components/app/game-master-welcome-view';
 // To switch back to original: import { WelcomeView } from '@/components/app/welcome-view';
 
-const MotionWelcomeView = motion.create(WelcomeView);
-const MotionSessionView = motion.create(SessionView);
+const MotionWelcomeView = motion.create(GameMasterWelcomeView);
+const MotionSessionView = motion.create(GameMasterView);
 
 const VIEW_MOTION_PROPS = {
   variants: {

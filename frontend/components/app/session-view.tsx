@@ -70,7 +70,7 @@ export const SessionView = ({
   useDebugMode({ enabled: IN_DEVELOPMENT });
 
   const messages = useChatMessages();
-  const [chatOpen, setChatOpen] = useState(false);
+  const [chatOpen, setChatOpen] = useState(true);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
 
   const controls: ControlBarControls = {
@@ -82,16 +82,22 @@ export const SessionView = ({
   };
 
   useEffect(() => {
-    const lastMessage = messages.at(-1);
-    const lastMessageIsLocal = lastMessage?.from?.isLocal === true;
-
-    if (scrollAreaRef.current && lastMessageIsLocal) {
+    if (scrollAreaRef.current) {
       scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
     }
   }, [messages]);
 
   return (
-    <section className="relative z-10 h-full w-full overflow-hidden bg-[#FAFAFA]" {...props}>
+    <section
+      className="relative z-10 h-full w-full overflow-hidden bg-black text-white"
+      style={{
+        backgroundImage: 'url(/fantasy-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+      {...props}
+    >
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" /> {/* Dark overlay for readability */}
       {/* Chat Transcript */}
       <div
         className={cn(

@@ -14,8 +14,6 @@ const CONTAINER_MOTION_PROPS = {
       transition: {
         ease: 'easeOut',
         duration: 0.3,
-        staggerChildren: 0.1,
-        staggerDirection: -1,
       },
     },
     visible: {
@@ -24,9 +22,6 @@ const CONTAINER_MOTION_PROPS = {
         delay: 0.2,
         ease: 'easeOut',
         duration: 0.3,
-        stagerDelay: 0.2,
-        staggerChildren: 0.1,
-        staggerDirection: 1,
       },
     },
   },
@@ -46,6 +41,9 @@ const MESSAGE_MOTION_PROPS = {
       translateY: 0,
     },
   },
+  initial: 'hidden',
+  animate: 'visible',
+  exit: 'hidden',
 };
 
 interface ChatTranscriptProps {

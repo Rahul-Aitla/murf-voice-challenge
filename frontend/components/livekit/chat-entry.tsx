@@ -33,31 +33,30 @@ export const ChatEntry = ({
     <li
       title={title}
       data-lk-message-origin={messageOrigin}
-      className={cn('group flex w-full flex-col gap-0.5', className)}
+      className={cn('group flex w-full flex-col gap-2 mb-4', className)}
       {...props}
     >
       <header
         className={cn(
-          'text-muted-foreground flex items-center gap-2 text-sm',
-          messageOrigin === 'local' ? 'flex-row-reverse' : 'text-left'
+          'flex items-center gap-2 text-xs font-bold tracking-[0.15em] uppercase',
+          messageOrigin === 'local' ? 'flex-row-reverse text-cyan-400' : 'flex-row text-purple-400'
         )}
       >
-        {name && <strong>{name}</strong>}
-        <span className="font-mono text-xs opacity-0 transition-opacity ease-linear group-hover:opacity-100">
-          {hasBeenEdited && '*'}
+        {messageOrigin === 'local' ? 'You' : 'Game Master'}
+        <span className="opacity-0 transition-opacity ease-linear group-hover:opacity-50 text-[10px] text-white/50">
           {time.toLocaleTimeString(locale, { timeStyle: 'short' })}
         </span>
       </header>
-      <span
+      <div
         className={cn(
-          'max-w-4/5 rounded-[20px] px-4 py-2 shadow-sm',
+          'relative px-6 py-4 text-base leading-relaxed backdrop-blur-md shadow-lg transition-all duration-300',
           messageOrigin === 'local'
-            ? 'bg-purple-600 text-white ml-auto rounded-tr-sm'
-            : 'bg-white text-purple-900 border border-purple-100 mr-auto rounded-tl-sm'
+            ? 'bg-cyan-950/40 text-cyan-50 ml-auto rounded-2xl rounded-tr-none border border-cyan-500/30 border-r-4 border-r-cyan-400 max-w-[80%] hover:bg-cyan-900/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]'
+            : 'bg-purple-950/60 text-purple-50 mr-auto rounded-2xl rounded-tl-none border border-purple-500/30 border-l-4 border-l-purple-500 max-w-[90%] font-serif tracking-wide hover:bg-purple-900/60 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)]'
         )}
       >
         {message}
-      </span>
+      </div>
     </li>
   );
 };

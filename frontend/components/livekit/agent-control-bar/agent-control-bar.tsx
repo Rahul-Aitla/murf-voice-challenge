@@ -3,7 +3,7 @@
 import { type HTMLAttributes, useCallback, useState } from 'react';
 import { Track } from 'livekit-client';
 import { useChat, useRemoteParticipants } from '@livekit/components-react';
-import { ChatTextIcon, PhoneDisconnectIcon } from '@phosphor-icons/react/dist/ssr';
+import { ChatTextIcon, PhoneDisconnectIcon, ArrowCounterClockwise } from '@phosphor-icons/react/dist/ssr';
 import { useSession } from '@/components/app/session-provider';
 import { TrackToggle } from '@/components/livekit/agent-control-bar/track-toggle';
 import { Button } from '@/components/livekit/button';
@@ -62,6 +62,10 @@ export function AgentControlBar({
     await send(message);
   };
 
+  const handleRestart = async () => {
+    await send("Restart story");
+  };
+
   const handleToggleTranscript = useCallback(
     (open: boolean) => {
       setChatOpen(open);
@@ -89,7 +93,7 @@ export function AgentControlBar({
     <div
       aria-label="Voice assistant controls"
       className={cn(
-        'bg-white border-purple-200 flex flex-col rounded-[31px] border p-3 shadow-lg',
+        'bg-black/80 backdrop-blur-md border border-purple-500/30 flex flex-col rounded-2xl p-4 shadow-[0_0_30px_rgba(0,0,0,0.5)] ring-1 ring-white/10',
         className
       )}
       {...props}
@@ -105,6 +109,17 @@ export function AgentControlBar({
 
       <div className="flex gap-1">
         <div className="flex grow gap-1">
+          {/* Restart Button */}
+          <Button
+            size="icon"
+            variant="secondary"
+            aria-label="Restart Story"
+            onClick={handleRestart}
+            className="mr-2"
+          >
+            <ArrowCounterClockwise weight="bold" />
+          </Button>
+
           {/* Toggle Microphone */}
           {visibleControls.microphone && (
             <TrackSelector
