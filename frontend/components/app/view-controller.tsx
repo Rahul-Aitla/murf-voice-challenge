@@ -7,10 +7,11 @@ import { useSession } from '@/components/app/session-provider';
 import { SessionView } from '@/components/app/session-view';
 import { GameMasterView } from '@/components/app/game-master-view';
 import { GameMasterWelcomeView } from '@/components/app/game-master-welcome-view';
-// To switch back to original: import { WelcomeView } from '@/components/app/welcome-view';
+import { ZudioWelcomeView } from '@/components/app/zudio-welcome-view';
+import { ZudioShoppingView } from '@/components/app/zudio-shopping-view';
 
-const MotionWelcomeView = motion.create(GameMasterWelcomeView);
-const MotionSessionView = motion.create(GameMasterView);
+const MotionWelcomeView = motion.create(ZudioWelcomeView);
+const MotionSessionView = motion.create(ZudioShoppingView);
 
 const VIEW_MOTION_PROPS = {
   variants: {

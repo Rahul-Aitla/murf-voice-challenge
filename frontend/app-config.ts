@@ -20,9 +20,9 @@ export interface AppConfig {
 }
 
 export const APP_CONFIG_DEFAULTS: AppConfig = {
-  companyName: 'FamPay',
-  pageTitle: 'FamPay Fraud Alert - AI Voice Assistant',
-  pageDescription: 'Talk to FamPay\'s AI-powered Fraud Alert Agent',
+  companyName: 'Zudio',
+  pageTitle: 'Zudio Voice Shopping - AI Assistant',
+  pageDescription: 'Shop with your voice at Zudio',
 
   supportsChatInput: true,
   supportsVideoInput: false,
@@ -30,10 +30,10 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   isPreConnectBufferEnabled: true,
 
   logo: '/lk-logo.svg',
-  accent: '#F6A316',
+  accent: '#000000',
   logoDark: '/lk-logo-dark.svg',
-  accentDark: '#F6A316',
-  startButtonText: 'Start Adventure',
+  accentDark: '#000000',
+  startButtonText: 'START VOICE SHOPPING',
 
   // for LiveKit Cloud Sandbox
   sandboxId: undefined,

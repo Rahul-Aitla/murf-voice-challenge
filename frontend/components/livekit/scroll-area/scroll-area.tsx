@@ -1,7 +1,7 @@
 'use client';
 
 import { forwardRef, useCallback, useRef } from 'react';
-import { useAutoScroll } from '@/components/livekit/scroll-area/hooks/useAutoScroll';
+// import { useAutoScroll } from '@/components/livekit/scroll-area/hooks/useAutoScroll';
 import { cn } from '@/lib/utils';
 
 interface ScrollAreaProps {
@@ -15,7 +15,8 @@ export const ScrollArea = forwardRef<HTMLDivElement, ScrollAreaProps>(function S
 ) {
   const scrollContentRef = useRef<HTMLDivElement>(null);
 
-  useAutoScroll(scrollContentRef.current);
+  // Disabled: Using manual scroll in parent component instead
+  // useAutoScroll(scrollContentRef.current);
 
   const mergedRef = useCallback(
     (node: HTMLDivElement | null) => {
@@ -31,7 +32,7 @@ export const ScrollArea = forwardRef<HTMLDivElement, ScrollAreaProps>(function S
   );
 
   return (
-    <div ref={mergedRef} className={cn('overflow-y-scroll scroll-smooth', className)}>
+    <div ref={mergedRef} className={cn('overflow-y-auto', className)}>
       <div>{children}</div>
     </div>
   );

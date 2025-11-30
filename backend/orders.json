@@ -1,0 +1,16 @@
+[
+  {
+    "id": "cb51d910-03e1-4a78-a049-47029b76529e",
+    "items": [
+      {
+        "product_id": "mug-001",
+        "name": "Classic White Coffee Mug",
+        "quantity": 2,
+        "unit_price": 12.99
+      }
+    ],
+    "total": 25.98,
+    "currency": "USD",
+    "created_at": "2025-11-29T22:50:49.035072"
+  }
+]

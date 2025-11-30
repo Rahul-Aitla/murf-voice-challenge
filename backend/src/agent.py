@@ -25,6 +25,7 @@ from livekit.plugins import murf, silero, google, deepgram, noise_cancellation
 from livekit.plugins.turn_detector.multilingual import MultilingualModel
 from wellness_notion import get_notion_client
 from game_master_agent import GameMasterAgent
+from shopping_agent import ShoppingAssistant
 
 logger = logging.getLogger("agent")
 
@@ -338,7 +339,7 @@ async def entrypoint(ctx: JobContext):
 
     # Start the session, which initializes the voice pipeline and warms up the models
     await session.start(
-        agent=GameMasterAgent(),
+        agent=ShoppingAssistant(),
         room=ctx.room,
         room_input_options=RoomInputOptions(
             # For telephony applications, use `BVCTelephony` for best results
